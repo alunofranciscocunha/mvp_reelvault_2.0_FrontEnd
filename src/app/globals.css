@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  
+  --color-destructive: var(--destructive);
+
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+.dark {
+  --background: rgb(20, 21, 24);
+  --foreground: rgb(209, 213, 219);
+
+  --card: rgb(26, 27, 31);
+  --card-foreground: rgb(209, 213, 219);
+
+  --popover: rgb(30, 41, 59);
+  --popover-foreground: rgb(209, 213, 219);
+
+  --primary: rgb(52, 211, 153);
+  --primary-foreground: rgb(15, 23, 42);
+
+  --secondary: rgb(108, 34, 166);
+  --secondary-foreground: rgb(209, 213, 219);
+
+  --muted: rgb(30, 41, 59);
+  --muted-foreground: rgb(107, 114, 128);
+
+  --accent: rgb(55, 65, 81);
+  --accent-foreground: rgb(161, 161, 170);
+
+  --destructive: rgb(239, 68, 68);
+  --destructive-foreground: rgb(15, 23, 42);
+
+  --border:  rgb(38, 41, 45);
+  --input:  rgb(38, 41, 45);
+  --ring: rgb(52, 211, 153);
+
+  --font-sans: DM Sans, sans-serif;
+  --font-serif: Lora, serif;
+  --font-mono: IBM Plex Mono, monospace;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
