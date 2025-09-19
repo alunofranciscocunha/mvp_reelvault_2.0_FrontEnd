@@ -26,6 +26,7 @@ Este projeto é um MVP (Produto Mínimo Viável) de uma aplicação web para cat
    - Clique em "Create" para gerar uma nova API Key (v4 auth token).
    - Copie o token de autenticação v4 (Bearer Token).
    - Se precisar de um passo a passo, veja este tutorial: [Como obter sua API Key do TMDB](https://www.educative.io/courses/movie-database-api-python/set-up-the-credentials)
+   - Mais referencias sobre a API do TMDB: [AQUI](https://developer.themoviedb.org/reference/intro/getting-started)
 
 4. **Configure o arquivo `.env`:**
    - Renomeie o arquivo `.env.example` para `.env` na raiz do projeto.
